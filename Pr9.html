@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Управление объектами</title>
+    <style>
+        /* CSS стили для оформления */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        input[type="text"], input[type="number"], select {
+            margin-bottom: 10px;
+            padding: 5px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 8px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .entity-list {
+            list-style: none;
+            padding: 0;
+        }
+        .entity-list li {
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Управление объектами</h2>
+        <form id="object-form">
+            <input type="text" id="name" placeholder="Название">
+            <input type="number" id="price" placeholder="Цена">
+            <select id="category">
+                <option value="car">Автомобиль</option>
+                <option value="computer">Компьютер</option>
+                <option value="movie">Фильм</option>
+            </select>
+            <button type="button" onclick="addObject()">Добавить объект</button>
+        </form>
+        <h3>Список объектов</h3>
+        <ul id="entity-list" class="entity-list">
+            <!-- Сюда будет динамически добавляться список объектов -->
+        </ul>
+    </div>
+
+    <script src="js/Pr9.js"></script>
+</body>
+</html>
